@@ -1,0 +1,110 @@
+/* LoginPage.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.heading {
+  margin-bottom: 1rem; /* Pushes the form to the bottom */
+  text-align: center;
+}
+
+.login-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 0.5rem;
+  }
+
+  button {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    margin-bottom: 0.25rem;
+  }
+
+  .form-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}

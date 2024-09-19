@@ -1,0 +1,448 @@
+.form-wrapper {
+  width: 100%;
+  max-width: 600px; /* Adjust max-width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #9199BE; /* Optional: add background color */
+  padding-left: 20px;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label-1, .form-label-2, .form-label-3, .form-label-4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.form-label-1 label, 
+.form-label-2 label, 
+.form-label-3 label, 
+.form-label-4 label {
+  min-width: 150px; /* Adjust label width as needed */
+  margin-right: 5px;
+}
+
+.form-box-1, .text-area-1, .text-area-2, .form-box-2 {
+  width: 100%;
+  flex: 1;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button-1 {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    background-color: #595775;
+    color: #fff;
+    width: 100%;
+} 
+
+/* Dream Container CSS */
+
+.dream-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #54678F; /* Light background for better readability */
+  border-radius: 8px; /* Rounded corners for container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1000px; /* Restrict maximum width */
+  margin: auto; /* Center the container with equal left and right margins */
+}
+
+.dream-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 8px; /* Rounded corners for items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.dream-content-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 45px; /* Gap between the columns */
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.dream-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.dream-section.expanded {
+  grid-column: span 3; /* Make it span all columns */
+  background-color: #f0f0f0; /* Light background to highlight */
+  padding: 45px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dream-heading {
+  font-size: 18px;
+  color: #333; /* Darker text for headings */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 5px;
+}
+
+.dream-content {
+  font-size: 16px;
+  color: #555; /* Slightly lighter text for content */
+  text-align: left;
+  white-space: pre-wrap;
+  margin-bottom: 5px; /* Align text to the left */
+  
+}
+
+/* Scrollbar CSS */
+
+.scrollable-content {
+  max-height: 100px; /* Adjust the height as needed to show only one paragraph */
+  overflow-y: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.scrollable-content:hover {
+  overflow-y: scroll;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #9199be; /* Blue background for buttons */
+  color: white; /* White text for buttons */
+}
+
+button:hover {
+  background-color: #595775; /* Darker blue on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.btn-2, .btn-3 {
+  width: 48%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #a0a0d0;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 8px 16px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.key-container {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  max-width: 400px; /* Adjust as needed */
+  max-height: 435px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.key-container h4 {
+  font-weight: bold;
+  margin-top: 0;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.key-content {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+  max-height: calc(100% - 100px); /* Adjust height based on header and padding */
+  padding-top: 10px;
+}
+
+.key-container p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.key-container p strong {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.key-container ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.key-container li {
+  margin-bottom: 5px;
+}
+
+.update-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.update-form > div {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.update-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-form .ant-form-item {
+  margin-bottom: 10px;
+}
+
+.update-form .ant-form-item-label {
+  padding: 0;
+}
+
+.update-form .ant-form-item-label > label {
+  font-weight: bold;
+  color: #333;
+  height: auto;  /* Add this line */
+ line-height: 1.5;
+  margin-bottom: 2px;
+}
+
+.update-form .ant-input,
+.update-form .ant-input-textarea {
+  width: 100%;
+}
+
+.update-form .ant-input-textarea {
+  min-height: 100px;
+}
+
+.update-form .save-btn {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-form .save-btn:hover {
+  background-color: #40a9ff;
+}
+
+.update-form .ant-form-item-control {
+  line-height: 1;
+}
+
+.update-form .ant-form-item-control-input {
+  min-height: auto;
+}
+
+.update-form .ant-form-item-explain,
+.update-form .ant-form-item-extra {
+  min-height: 0;
+  margin-top: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .form-wrapper {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .dream-container {
+    max-width: 90%;
+  }
+
+  .dream-content-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .button-1 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .btn-2, .btn-3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .key-container {
+    width: 100%;
+    left: 0;
+    max-height: none;
+    position: relative;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-label-1 label, 
+  .form-label-2 label, 
+  .form-label-3 label, 
+  .form-label-4 label {
+    min-width: 100px;
+  }
+
+  .dream-content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-heading {
+    font-size: 16px;
+  }
+
+  .dream-content {
+    font-size: 14px;
+  }
+
+  .btn-2, .btn-3 {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .key-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
